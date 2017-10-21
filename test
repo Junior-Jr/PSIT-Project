@@ -1,0 +1,4 @@
+"""eiei"""
+def main():
+	"""func doc"""
+main()
