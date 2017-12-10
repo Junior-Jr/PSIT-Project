@@ -1,7 +1,0 @@
-"""eiei"""
-def main():
-    """func doc"""
-    print('docstring is useless kuy')
-    print('kuy <3')
-main()
-
