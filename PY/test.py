@@ -7,7 +7,7 @@ def tri_rate(obj):
             print(i, line[i])
 
 def main():
-    with open("../Data/Data.csv") as obj:
+    with open("C:/Users/ASUS PC/Documents/GitHub/PSIT-Project/Data/Data.csv") as obj:
         tri_rate(obj)
 main()
 
