@@ -7,7 +7,7 @@ GHG2012 = []
 GHG2011 = []
 GHG2010 = []
 STATE = []
-def tri_rate(obj):
+def ghg_rate(obj):
     reader = csv.DictReader(obj, delimiter = ',')
     for line in reader:
         for i in line:
@@ -28,7 +28,7 @@ def tri_rate(obj):
 
 def main():
     with open("../Data/Data.csv") as obj:
-        tri_rate(obj)
+        ghg_rate(obj)
 main()
 
 def render():
@@ -38,7 +38,7 @@ def render():
     #line_chart.x_labels = map(str, range(2010, 2014))
 
 
-    """add line"""
+    """loop render file"""
     for i in range(55):
         line_chart = pg.Line(x_label_rotation=30, style=DarkStyle)
         line_chart.title = 'Green House Gas Emissions(in metric tons)'
