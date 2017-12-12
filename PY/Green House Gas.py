@@ -36,8 +36,7 @@ def render():
     #line_chart = pg.Line(x_label_rotation=30, style=DarkStyle)
     #line_chart.title = 'Toxics Release Inventory(in lbs)'
     #line_chart.x_labels = map(str, range(2010, 2014))
-
-
+ 
     """loop render file"""
     for i in range(55):
         line_chart = pg.Line(x_label_rotation=30, style=DarkStyle)
@@ -45,9 +44,7 @@ def render():
         line_chart.x_labels = map(str, range(2010, 2014))
         line_chart.add(STATE[i], [GHG2010[i], GHG2011[i], GHG2012[i], GHG2013[i], GHG2014[i]])
         line_chart.render_to_file(('../GHG/State '+str(STATE[i])+'.svg'))
-
     """render"""
     #line_chart.render_to_file('../tmp/Overall country.svg')
     #line_chart.render_in_browser()
-
 render()
