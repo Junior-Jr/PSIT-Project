@@ -46,7 +46,7 @@ def render():
     #    line_chart.title = 'Green House Gas Emissions(in metric tons)'
     #    line_chart.x_labels = map(str, range(2010, 2014))
     #    line_chart.add(STATE[i], [GHG2010[i], GHG2011[i], GHG2012[i], GHG2013[i], GHG2014[i]])
-    #    line_chart.render_to_file(('../GHG/State '+str(STATE[i])+'.svg'))
+    
 
     """render"""
     line_chart.render_to_file('../TRI/Overall country.svg')
